@@ -24,7 +24,7 @@ class ZebraController < ApplicationController
     end
   end
 
-  def play_rock
+  def play_scissors
     @comp_move = ["rock", "paper", "scissors"].sample
     render({:template => "game_templates/play_scissors"})
     if @comp_move == "scissors"
